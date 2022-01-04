@@ -19,11 +19,11 @@ MP,DENS,1,2.7E-009
 /dscale,all,1.0 
 plesol,s,eqv, 0,1.0
 
-!Ô¤¼ÆËã
+!Ã”Â¤Â¼Ã†Ã‹Ã£
 un=3
 *do,i,1,un
-	*use,nedel.txt
-	*use,solve.txt
+	*use,nedel.f
+	*use,solve.f
 *enddo
 
 /post1
@@ -31,13 +31,13 @@ un=3
 plnsol,s,eqv, 0,1.0
 
 elel=1
-!ºó¼ÆËã
+!ÂºÃ³Â¼Ã†Ã‹Ã£
 *do,j,1,7
 	a=-10+j*elel
 	b=10-j*elel
 	*do,i,1,2
-		*use,nedelpost.txt
-		*use,solve.txt
+		*use,nedelpost.f
+		*use,solve.f
 	*enddo
 
 	/post1
